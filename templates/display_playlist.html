@@ -130,14 +130,15 @@
                             <p class="p2"> <span style="font-style: italic; font-weight: bold; font-size: 18px;"> Model Selection </span> <br>
                             Using the 
                             <a href="https://scikit-learn.org/stable/">scikit-learn library</a>,
-                            I trained 7 models (including SVM, Naive Bayes, KNN – to name a few) 
+                            I trained 7 classifiers (including SVM, Naive Bayes, KNN – to name a few) 
                             and evaluated each using 10-fold cross validation. The Random Forest returned the highest accuracy 
                             of 0.71 and the highest ROC AUC score of 0.77. The ROC AUC was a relevant metric given 
                             the nature of this classification task; one's opinion on a song is usually a bit more nuanced and 
                             is hardly ever binary. Because of this, I chose to have the Random Forest model output 
                             <span style="font-style: italic;">probabilities</span> that Antoine will like a song,
-                            as opposed to binary (0-1) values. I then fed this model 1000 songs from my own Spotify library. 
-                            <span style="size: 15px;">
+                            as opposed to binary (0-1) values. I then fed this model 1000 songs from my own Spotify library, which 
+                            the playlist generator pulls from. 
+                            <span style="size: 15px;"> <br>
                             (Side note: although I didn't use the binary 'like' values, the model predicted that Antoine would 
                             like 430 of my songs, and dislike 669 of them... unsurprisingly &#128517;) </span>
                         </p>
