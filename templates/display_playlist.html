@@ -64,11 +64,12 @@
 
         <p class="p1"> 
             {% if "surprise me" in genres %}
-                <p  style="font-size: 20px;"> This playlist has songs from a bunch of different genres! </p>
+                <p  style="font-size: 20px;"> This playlist has songs from a number of different genres! </p>
             
             {% else %}
-            <p class="p1">  The playlist includes songs from the following genres:
-                    {{ genres|join(', ') }}
+            <p class="p1">  The playlist includes 
+                {{ genres|join(', ') }}
+                songs – to name a few!
                 </p>
             {% endif %}
         </p> 
@@ -137,10 +138,12 @@
                             is hardly ever binary. Because of this, I chose to have the Random Forest model output 
                             <span style="font-style: italic;">probabilities</span> that Antoine will like a song,
                             as opposed to binary (0-1) values. I then fed this model 1000 songs from my own Spotify library, which 
-                            the playlist generator uses to output songs. 
-                            <span style="font-size: 15px;"> <br>
-                            (Side note: although I didn't use the binary 'like' values, the model predicted that Antoine would 
-                            like 430 of my songs, and dislike 669 of them... not bad, but also not surprising &#128517;) </span>
+                            the playlist generator uses to output songs. <br>
+                            <span style="font-size: 15px;"> 
+                            <br>
+                            <span style="font-weight: bold;">Side note:</span>
+                            although I didn't use the binary 'like' values, the model predicted that Antoine would 
+                            like 430 of my songs, and dislike 669 of them... not bad, but also not surprising &#128517; </span>
                         </p>
                     </div>
                     <div class="modal-footer">
