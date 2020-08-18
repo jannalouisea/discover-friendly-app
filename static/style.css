@@ -1,11 +1,11 @@
 /* 
-Styling modified from https://sp-bootstrap.global.ssl.fastly.net/8.0.0/sp-bootstrap.min.css
+Some styling modified from https://sp-bootstrap.global.ssl.fastly.net/8.0.0/sp-bootstrap.min.css
 */
 
 .intro {
     width: 55%; 
     text-align: justify; 
-    padding: 40px 80px; 
+    padding: 20px 70px 0px 70px; 
     float: left;
 }
 

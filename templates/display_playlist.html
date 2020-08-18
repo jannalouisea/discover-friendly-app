@@ -121,7 +121,7 @@
                             Over a period of a few months, Antoine classified over 2300 songs on Spotify as one of two categories – 
                             liked or disliked. With help from the python library 
                             <a href="https://spotipy.readthedocs.io/en/2.9.0/#">spotipy</a>,
-                            I collected 16 attributes for each song, which I then used to train the predictive
+                            I collected 16 attributes for each song, which I then used to train the
                             model. These attributes include musical metrics created by Spotify 
                             developers, like danceability, liveness and speechiness. They also 
                             include standard musical qualities, like tempo, duration and time signature. Additionally, 
@@ -136,7 +136,10 @@
                             the nature of this classification task; one's opinion on a song is usually a bit more nuanced and 
                             is hardly ever binary. Because of this, I chose to have the Random Forest model output 
                             <span style="font-style: italic;">probabilities</span> that Antoine will like a song,
-                            as opposed to binary 0-1 values. 
+                            as opposed to binary (0-1) values. I then fed this model 1000 songs from my own Spotify library. 
+                            <span style="size: 15px;">
+                            (Side note: although I didn't use the binary 'like' values, the model predicted that Antoine would 
+                            like 430 of my songs, and dislike 669 of them... unsurprisingly &#128517;) </span>
                         </p>
                     </div>
                     <div class="modal-footer">
