@@ -7,7 +7,7 @@ from generate_playlist import gen_playlist
 import time
 
 app = Flask(__name__) # Turn this file into a web app (create app object)
-app.secret_key = "WX`8$8E21'$2N|{\x16"
+app.secret_key = "APP SECRET KEY"
 app.static_folder = 'static'
 
 API_BASE = 'https://accounts.spotify.com'
@@ -15,9 +15,8 @@ REDIRECT_URI = "https://discover-friendly.herokuapp.com/api_callback"
 SCOPE = 'playlist-modify-private,playlist-modify-public,user-top-read, user-library-read'
 SHOW_DIALOG = True # False later
 
-CLI_ID = "3f24d8da29c44c2d80b2c2abe518b5d6"
-CLI_SEC = "b79369bb34f44c09bb3a9a50c000c9ff"
-
+CLI_ID = "CLI_ID"
+CLI_SEC = "CLI_SEC"
 
 
 
