@@ -94,45 +94,7 @@ def go():
         session['genres'] = genres
         session['thresh'] = thresh
 
-        return render_template('display_playlist.html', mood=mood, genres=genres, uris=uris, ids=ids, thresh=thresh)
-            #sp = spotipy.Spotify(auth=session['toke'])
-
-            #ext_urls = []
-            #prev_urls = []
-            #img_urls = []
-            #titles = []
-            #ids = []
-            #artists = []
-
-                #artist = []
-                #ext_url = track['external_urls']['spotify']
-                #prev_url = track['preview_url']
-                #img_url = track['album']['images'][0]['url']
-                #title = track['name']
-
-                #for art in track['artists']:
-                #    artist.append(art['name'])
-
-                # Join list of artists into a single string
-                #artist = ", ".join(artist)
-
-                #print('Prev URL of track' + str(i) + ': ' + prev_url)
-                #print('Image URL of track' + str(i) + ': ' + img_url)
-                #ext_urls.append(ext_url) 
-                #prev_urls.append(prev_url)
-                #img_urls.append(img_url)
-                #titles.append(title)
-                #artists.append(artist)
-        #elif request.form["sub_but"] == "Generate a playlist from my music!":
-
-            
-            #sp = spotipy.Spotify(auth=session['toke'])
-            #ptracks = get_playlist_tracks(sp)
-            # call get_tracks(sp, list_id, type)
-            #stracks = get_saved_tracks(sp)
-            #df = get_track_features(sp, stracks)
-
-            
+        return render_template('display_playlist.html', mood=mood, genres=genres, uris=uris, ids=ids, thresh=thresh)            
 
 
 @app.route("/save_playlist", methods=["POST"])
