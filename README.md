@@ -1,5 +1,5 @@
 # Discover Friendly
-A web app that generates Spotify playlists tailored to a friend's music taste. Predicts songs that he would like by using a Random Forest classifier. 
+This is a web app that generates Spotify playlists tailored to a friend's music taste. It predicts songs that he would like by using a Random Forest classifier. 
 
 Created with Flask (python), Spotify API, HTML, CSS, and Javascript. Deployed with Heroku.
 
