@@ -5,4 +5,6 @@ Created with Flask (python), Spotify API, HTML, CSS, and Javascript. Deployed wi
 
 To view the app: https://discover-friendly.herokuapp.com/
 
-For more insight into my data analysis process, check out the repo [here](https://github.com/jannalouisea/music_taste_predictor)!
+---- 
+
+For more insight into my data analysis process, you can check out the repo [here](https://github.com/jannalouisea/music_taste_predictor)!
